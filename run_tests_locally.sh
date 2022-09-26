@@ -1,4 +1,5 @@
 #!/bin/bash
+name=$(cat "student_repo.txt")
 for file in `ls *.ipynb`; do
   echo "Testing $file"
   name="${file%.*}"
