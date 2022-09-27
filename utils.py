@@ -41,6 +41,9 @@ def get_subdir(identifier):
     if "lab-" in identifier:
         print("Auto-detected that this is a lab")
         subdir="labs"
+    elif "topic-" in identifier:
+        print("Auto-detected that this is a topic")
+        subdir="topics"
     elif "chapter-" in identifier:
         print("Auto-detected that this is a chapter")
         subdir="chapters"
